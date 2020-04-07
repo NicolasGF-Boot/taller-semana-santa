@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Punto 1</title>
+</head>
+
+<body>
+    <!--ejercicio 1  -->  
+    <h3 class="ejercicio">Ejercicio 1</h3>
+    <div class="pregunta">
+        <h2>Ingrese algun texto de Despedida</h2>
+        <div id="resultado"></div>
+        <input type="text" id="texto">
+        <input type="submit" onclick="cambio()">
+    </div>
+    <!--ejercicio 2  -->  
+    <h3 class="ejercicio">Ejercicio 2</h3>
+    <div class="pregunta">
+        <h2 id="frase">Ingrese una frase de dos palabras</h2>
+        <div id="resultado2"></div>
+        <input type="text" id="texto2">
+        <input type="submit" onclick="cambio2()">
+    </div>
+    <!--ejercicio 3  -->  
+    <h3 class="ejercicio">Ejercicio 3</h3>
+    <div class="pregunta">
+        <h2 id="frase">Ingrese una frase o palabra</h2>
+        <div id="resultado3"></div>
+        <input type="text" id="texto3">
+        <input type="submit" onclick="cambio3()">
+    </div>
+    <!--ejercicio 4  -->  
+    <h3 class="ejercicio">Ejercicio 4</h3>
+    <div class="pregunta">
+        <h2 id="frase">Presione el boton para reordenar la lista de frutas</h2>
+        <div>
+            <div id="array"></div>
+            <ul id="resultado4">
+                
+            </ul>
+        </div>
+        <input type="submit" onclick="cambio4()">
+    </div>
+    <!--ejercicio 5 y 6  -->  
+    <h3 class="ejercicio">Ejercicio 5 y 6</h3>
+    <div class="pregunta">
+        <h2 id="frase">Presione el boton para reordenar la lista de nombres por orden alfabetico</h2>
+        <div>
+            <div id="array1"></div>
+            <ul id="resultado5">    
+            </ul>
+            <div id="array2"></div>
+        </div>
+        <input type="submit" onclick="cambio5()">
+    </div>
+    <!--ejercicio 7  -->  
+    <h3 class="ejercicio">Ejercicio 7</h3>
+    <div class="pregunta">
+        <h2 id="frase">Presione el boton para reordenar el siguiente array</h2>
+        <div>
+            <div id="array3"></div>
+            <div id="resultado6"></div>
+        </div>
+        <input type="submit" onclick="cambio6()">
+    </div>
+
+    <!--ejercicio 8  -->  
+    <h3 class="ejercicio">Ejercicio 8</h3>
+    <div class="gaticos">
+        <div class="cuadrado">
+        <img class="imagen-gato" src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="gato">
+        <h2 id="frase2">¿Quieres saber como se va a llamar tu proximo gato?</h2>
+            <div id="resultado8"></div>
+        <input id="boton-gatos" type="submit" onclick="Gatos()" value="Si, quiero saber">
+        </div>
+    </div>
+     <!--ejercicio 9  -->  
+     <h3 class="ejercicio">Ejercicio 9</h3>
+     <div class="electrodomesticos">
+         <div class="grilla-electro">
+            <label for="productos">Seleccione una categoria para filtrar</label><br>
+            <select id="productos" onchange="filtrar()">
+                <option value="todos">Todos los productos</option>
+              <option value="computers">Computadores</option>
+              <option value='clothes'>Ropa</option>
+              <option value="mobiles">Celulares</option>
+            </select>
+            <ul class="productos">
+            </ul>
+     </div>
+    <script src="punto1.js"></script>
+</body>
+
+
+
+</html>
